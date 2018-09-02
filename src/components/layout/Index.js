@@ -9,7 +9,7 @@ const Index = () => {
         <React.Fragment>
             <Tracks />
         </React.Fragment>
-    );
+    )
       
 };
 

@@ -9,6 +9,12 @@ export class Provider extends Component {
         track_list: [],
         heading: "top 10 tracks"
     }
+
+    componentDidMount(){
+        
+        
+        
+    }
     
     render() {
         
@@ -24,4 +30,4 @@ export class Provider extends Component {
     
 }
 
-export const Consumer = Context.consumer;
+export const Consumer = Context.Consumer;

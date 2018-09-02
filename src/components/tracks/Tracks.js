@@ -7,16 +7,17 @@ class Tracks extends Component {
         
         return (
         
+            <React.Fragment>
             <Consumer>
-                {value =>{
+                {value => {
                    console.log(value);
-                return <h1> Tracks </h1>;
-                    }   }
+                    return <h1> Tracks </h1>;
+                }}
             </Consumer>
-            
+            </React.Fragment>
         );  
-    };
+    }
     
-};
+}
 
 export default Tracks;
