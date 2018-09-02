@@ -12,7 +12,17 @@ export class Provider extends Component {
 
     componentDidMount(){
         
-        
+        fetch(`https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/chart.tracks.get?page=1&page_size=10&country=us&f_has_lyrics=1&apikey=${process.env.REACT_APP_MM_KEY}`)
+          .then(res => {
+            return res.json();
+          })
+          .then(myJson => {
+            //console.log(myJson);
+            this.setState({track_list : myJson.message.body.track_list});
+          })
+          .catch(function (err){
+            console.log("error fetching json from musixmatch api on "+ new Date());    
+        });
         
     }
     

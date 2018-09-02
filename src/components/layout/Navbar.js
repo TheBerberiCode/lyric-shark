@@ -10,8 +10,7 @@ const Navbar = () => {
                     Lyric Shark
                 </span>
             </nav>
-    );
-    
+    ); 
     
 };
         
