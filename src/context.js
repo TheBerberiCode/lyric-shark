@@ -3,9 +3,7 @@ import React, {Component} from 'react';
 const Context = React.createContext();
 
 export class Provider extends Component {
-    
     state = {
-        
         track_list: [],
         heading: "top 10 tracks"
     }
@@ -17,7 +15,6 @@ export class Provider extends Component {
             return res.json();
           })
           .then(myJson => {
-            //console.log(myJson);
             this.setState({track_list : myJson.message.body.track_list});
           })
           .catch(function (err){
@@ -27,7 +24,6 @@ export class Provider extends Component {
     }
     
     render() {
-        
        return (
        
             <Context.Provider value={this.state}>
