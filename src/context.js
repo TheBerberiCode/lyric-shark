@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 const Context = React.createContext();
-
+const Title = "Safet's Project"
 export class Provider extends Component {
     state = {
         track_list: [],
